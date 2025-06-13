@@ -1,0 +1,109 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(246, 220, 185, 0.609);
+  border: 5px;
+  border-color: rgb(0, 0, 0);
+
+  /* border-bottom: rgba(246, 210, 164, 0.797); */
+  height: fit-content;
+  margin: 0px;
+  width: 100%;
+}
+.NavItems > ul > li:hover {
+  transition: ease-in-out;
+  background-color: #76ace5;
+  cursor: pointer;
+}
+.cuisine {
+  display: flex;
+  justify-content: space-between;
+}
+.resto-cntnr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.rating {
+  padding-right: 10px;
+  padding-left: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: rgb(0, 116, 0);
+  color: aliceblue;
+  border-radius: 5px;
+  margin-right: 8px;
+  margin-left: 5px;
+  border: 2px solid aliceblue;
+}
+img {
+  padding-top: 20px;
+  border-radius: 30px;
+  width: 100%;
+  height: fit-content;
+}
+html {
+  margin: 0px;
+  background-image: url(./gradient.svg);
+}
+h1 {
+  font-family: "Micro 5", sans-serif;
+  font-size: 45px;
+  font-style: normal;
+}
+.res-card {
+  padding-left: 20px;
+  height: max-content;
+  width: max-content;
+  border-radius: 30px;
+  background-color: aliceblue;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  opacity: 0.85;
+  background-image: url(./kfc.png);
+  color: aliceblue;
+}
+.resto-cntnr :hover {
+  cursor: pointer;
+  zoom: 102%;
+  transition: all 250s ease;
+  position: relative;
+  opacity: 1;
+}
+.search {
+  padding: 30px;
+}
+.logo {
+  padding-left: 15px;
+  font-size: 90%;
+  padding-right: 15px;
+  background: -webkit-linear-gradient(#901e1e, #df7d7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo:hover {
+  zoom: 105%;
+  cursor: pointer;
+}
+
+.NavItems {
+  /* margin-right: 5px; */
+  font-size: 25px;
+  margin-right: 20px;
+}
+.NavItems > ul {
+  display: inline-flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: end;
+  margin-left: 50px;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.NavItems > ul > li {
+  padding: 10px;
+  /* margin: 20px; */
+  align-items: center;
+}
