@@ -188,7 +188,7 @@ h1 {
 .search {
   transition: width 1s ease-in-out;
   padding-left: 10px;
-  width: 85px;
+  width: 150px;
   border-radius: 25px;
   height: 32px;
   margin-right: 8px;
