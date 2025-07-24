@@ -1,4 +1,4 @@
-import { CDN_URL } from '../utils/constant';
+import { CDN_URL } from '../utils/constant.js';
 const Restocard = (props) => {
   const { resData } = props;
   const { cloudinaryImageId, name, cuisines, avgRating, costForTwo } =

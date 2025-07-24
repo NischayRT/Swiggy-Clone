@@ -1,7 +1,7 @@
-import Restocard from './RestaurantCard';
+import Restocard from './RestaurantCard.js';
 import { useState, useEffect, use } from "react";
 import { Dropdown } from "react-bootstrap";
-import Shimmer from './Shimmer';
+import Shimmer from './Shimmer.js';
 const Body = () => {
   const [ResList, setResList] = useState([]);
   useEffect(() => {
