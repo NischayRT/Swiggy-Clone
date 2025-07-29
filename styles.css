@@ -74,7 +74,7 @@ img {
   color: #ff9800;
   font-family: "M PLUS Rounded 1c", sans-serif;
   border: 3px solid #ff9800;
-  border-radius: 5px;
+  border-radius: 25px;
   font-weight: bold;
   font-size: 16px;
   margin-left: 3px;
@@ -86,7 +86,7 @@ img {
   background-color: #ff9800;
   color: aliceblue;
   font-family: "M PLUS Rounded 1c", sans-serif;
-  border-radius: 5px;
+  border-radius: 25px;
   border: 3px solid #ff9800;
   font-weight: bold;
   font-size: 16px;
@@ -98,6 +98,7 @@ img {
   color: #ff9800;
   font-family: "M PLUS Rounded 1c", sans-serif;
   border: 3px solid #ff9800;
+  scale: 1.05;
 }
 .Login {
   border: 0.7px solid #fff3e0;
@@ -226,6 +227,9 @@ h1 {
 }
 .search-btn:active {
   scale: 0.9;
+  background-color: #ff5722;
+  color: #fff3e0;
+  border: 2px solid #ff5722;
 }
 .search-btn:hover {
   border: 2px solid #ff5722;
@@ -239,11 +243,11 @@ h1 {
 .logo:hover {
   cursor: pointer;
   transition: all 0.3s ease;
-  transition-duration: 3s;
+  transition-duration: 1.5s;
   padding-top: 0px;
   background: -webkit-linear-gradient(#3b2d2d, #be5959);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   transform: scale(1.1);
 }
 .NavItems {
