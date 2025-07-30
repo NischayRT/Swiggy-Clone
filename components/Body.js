@@ -38,9 +38,13 @@ const Body = () => {
 
   // UPDATED: fetchData now takes lat, lng
   const fetchData = async (lat = DEFAULT_LAT, lng = DEFAULT_LNG) => {
-    const apiUrl = `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
-    const data = await fetch(apiUrl);
-    const json = await data.json();
+    const apiUrl = `https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
+    const response = await fetch(apiUrl, {
+      headers: {
+        "x-cors-api-key": "temp_b3cf31787eccbc7cc29237bca242ee7d", // <-- put your CORS.SH API Key here
+      },
+    });
+    const json = await response.json();
     console.log(json);
     setResList(
       json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
