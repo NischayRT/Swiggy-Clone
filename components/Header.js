@@ -1,6 +1,6 @@
 // Remove the import and use the public folder for the image
 import { useState } from "react";
-import Body from "./Body";
+import Body from "./Body.js";
 const Header = () => {
   const [LoginBtn, setLoginBtn] = useState("Login");
   return (
